@@ -1,0 +1,18 @@
+<polymer-element name="main-menu">
+<template>
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="#">Play go online!</a>
+      <ul class="nav">
+        <li><a id='nav_start' href="#" on-click="{{Click}}" data-item="newGame">Game now</a></li>
+        <li class="divider-vertical"></li>
+        <li><a id='nav_chat' href="#" on-click="{{Click}}" data-item="webChat">Chat</a></li>
+        <li class="divider-vertical"></li>
+        <li><a id='nav_games' href="#" on-click="{{Click}}" data-item="gamesView">Games</a></li>
+        <li class="divider-vertical"></li>
+      </ul>
+    </div>
+  </div>
+</template>
+<script type="application/dart" src="mainmenu.dart"></script>
+</polymer-element>

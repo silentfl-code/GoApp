@@ -1,0 +1,68 @@
+html,body
+{
+    height: 100%;
+}
+
+body {
+  overflow:hidden;
+}
+
+textarea, #users {
+  -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  width: 100%;
+  height: calc(100% - 50px);
+  resize: none;
+}
+
+.container-fluid, .span8, .span4 {
+  height: 100%;
+}
+
+
+.form-inline {
+  width: 100%;
+}
+
+.form-input {
+  width: calc(100% - 80px);
+}
+
+.row-fluid {
+  height: calc(100% - 65px);
+}
+
+label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+web-chat {
+	height: 100%;
+	width: 100%;
+}
+
+.tabs {
+  height: 100%;
+  display:none;
+}
+
+#users, #tab0 {
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+#users td {
+  border: none;
+}
+
+#messages, #users {
+    cursor: auto;
+    background-color: white;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}

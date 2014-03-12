@@ -1,0 +1,16 @@
+<link rel="import" href="mainmenu/mainmenu.html">
+<link rel="import" href="newgame/newgame.html">
+<link rel="import" href="webchat/webchat.html">
+<!--
+<link rel="import" href="gamesview/gamesview.html">
+-->
+
+<polymer-element name="go-app"> <template>
+<div class="container-fluid">
+  <main-menu id="mainMenu"></main-menu>
+  <div class="row-fluid">
+    <new-game id="newGame"></new-game>
+    <web-chat id="webChat"></web-chat>
+  </div>
+</div>
+</template> <script type="application/dart" src="goapp.dart"></script> </polymer-element>

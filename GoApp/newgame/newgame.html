@@ -1,0 +1,56 @@
+<polymer-element name="new-game" attributes="visible">
+<template>
+  <div id="tab" class="tabs">
+    <div class="span12 form-input">
+      <div class="form-horizontal">
+        <h3 class="offset1">Game settings</h3>
+        <div class="control-group">
+          <label for="size" class="control-label">Board size</label>
+          <div class="controls">
+            <select id="size" selectedIndex="{{data['size']}}">
+              <option>9</option>
+              <option>13</option>
+              <option>19</option>
+            </select>
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="color" class="control-label">Stone color</label>
+          <div class="controls">
+            <select id="color" selectedIndex="{{data['color']}}">
+              <option>auto</option>
+			  <option>black</option>
+              <option>white</option>
+            </select>
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="komi" class="control-label">Komi</label>
+          <div class="controls">
+            <select id="komi" selectedIndex="{{data['komi']}}">
+              <option>5.5</option>
+              <option>6.5</option>
+              <option>7.5</option>
+            </select>
+          </div>
+        </div>
+<!-- for future. now only japan
+        <div class="control-group">
+          <label for="rules" class="control-label">Rules</label>
+          <div class="controls">
+            <select id="rules">
+              <option selected="selected">Japan</option>
+              <option disabled>Chinese</option>
+            </select>
+          </div>
+        </div>
+-->		
+        <div class="control-group offset1">
+          <button id="newGame" on-click="{{CreateNewGameClick}}">Start game</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script type="application/dart" src="newgame.dart"></script> 
+</polymer-element>
